@@ -1,0 +1,885 @@
+/*RESET */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    scroll-behavior: smooth;
+
+}
+
+body {
+    background: rgb(163,250,255);
+    background: linear-gradient(233deg, rgba(163,250,255,1) 0%, rgba(114,138,255,1) 100%);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    padding-bottom: 100px;
+}
+
+.apply {
+    width: 25%;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #2557a7;
+    color: white;
+    border: none;
+}
+
+.over {
+    background-color: #272a2e;
+    border-radius: 20px;
+    padding: 50px;
+    color: white;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.over h2 {
+    margin-bottom: 50px;
+}
+
+.over p {
+    margin-bottom: 20px;
+}
+
+.over a {
+    padding: 10px;
+    border-radius: 10px;
+    background-color: white;
+    color: black;
+    text-decoration: none;
+
+}
+
+.who {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.who div {
+    width: 45%;
+}
+
+.information {
+    width: 100%;
+}
+
+.salary {
+    width: 45%;
+}
+
+.salary input {
+    width: 100%;
+}
+
+.salary label {
+    width: 100%;
+}
+
+.type {
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+.type select {
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+}
+
+.radio {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.email {
+    width: 100%;
+}
+
+.email input{
+    width: 50%;
+}
+
+textarea {
+    width: 100%;
+    height: 80px;
+    border-radius: 15px;
+    padding: 15px;
+}
+
+.logo2 {
+    display: none;
+}
+
+.title a img:hover {
+    width: 74%;
+}
+
+/* HEADER */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 50px;
+    background-color: #272a2e;
+    padding: 20px;
+}
+
+.header_content img {
+    width: 70%;
+    float: left;
+    transition: all .5s;
+}
+
+div.title {
+    text-transform: uppercase;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    width: 20%;
+}
+
+div.title img {
+    width: 70%;
+    transition: all .3s;
+}
+
+/* NAVBAR  */
+
+.navbar {
+    width: 20%;
+    z-index: 999;
+}
+
+div.navbar ul {
+    display: flex;
+    justify-content: flex-end;
+}
+
+div.navbar ul li {
+    border-radius: 50%;
+    transition: all .5s;
+    min-height: 50px;
+    min-width: 50px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.navbar ul li i {
+    font-size: 30px;
+    color: white;
+    transition: all .3s;
+}
+
+div.navbar ul li i:hover {
+    color: #2557a7;
+}
+
+div.navbar ul li > ul {
+    display: none;
+    position: absolute;
+    bottom: 230%;
+    right: 50%;
+    transform: translateX(40%);
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #272a2e;
+}
+
+div.navbar ul li:hover > ul {
+    display: block;
+    bottom: -230%;
+    right: 50%;
+    transform: translateX(40%);
+}
+
+div.navbar ul li > ul li a{
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all .2s;
+}
+
+div.navbar ul li > ul li a:hover {
+    color: #1a3d75;
+}
+
+/* MAIN  */
+
+main {
+    margin-left: auto;
+    margin-right: auto;
+    width: 85%;
+    display: flex;
+    justify-content: start;
+    flex-wrap: wrap;
+}
+
+main.login {
+    display: block;
+    width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+main.ad {
+    background-color: rgba(47, 47, 47, 0.644);
+    border-radius: 20px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+main.ad h1 {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 50px;
+    color: white;
+}
+
+/* ARTICLE  */
+
+article {
+    width: 23%;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 20px;
+    background: rgba( 0, 0, 0, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 12px );
+    -webkit-backdrop-filter: blur( 12px );
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    height: 300px;
+    overflow: hidden;
+    transition: all .5s;
+    color: white;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.new {
+    transition: all .2s;
+}
+
+.new p {
+    position: absolute;
+    bottom: -50px;
+    transition: all .2s;
+}
+
+.new:hover p {
+    bottom: 10px;
+}
+
+article:hover {
+    background: rgba(0, 0, 0, 0.403);
+}
+
+article .date {
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-style: italic;
+}
+
+article .data {
+    position: absolute;
+    text-align: justify;
+    top: 55%;
+    left: 50%;
+    width: 80%;
+    transform: translate(-50%, -50%);
+}
+
+.button {
+    padding: 10px;
+    border-radius: 10px;
+    height: auto;
+    background-color: rgb(58, 56, 58);
+    position: absolute;
+    bottom: -50px;
+    transition: bottom .2s;
+    transition-delay: 650ms;
+}
+
+.button:hover {
+    background-color: rgb(0, 0, 0);
+}
+
+article:hover > .button {
+    bottom: 10px;
+}
+
+.button a {
+    color: white;
+    text-decoration: none;
+}
+
+article i {
+    position: absolute;
+    right: 50%;
+    top: 50%;
+    transform: translate(50%, -50%);
+    color: #78a2ba;
+    font-size: 100px;
+    transition: all .3s;
+}
+
+.delete i {
+    color: white;
+    top: 7%;
+    right: 7%;
+    font-size: 24px;
+}
+
+.delete i:hover {
+    color: rgb(182, 3, 3);
+    font-size: 28px;
+}
+
+article i:hover {
+    font-size: 105px;
+    color: white;
+}
+
+.login input {
+    margin-bottom: 15px;
+}
+
+.login textarea {
+    margin-bottom: 20px;
+}
+
+/* USERS  */
+
+main.users {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: #272a2e;
+    border-radius: 20px;
+    padding: 50px;
+}
+
+main.users table td {
+    width: 100%;
+    color: white;
+    padding: 20px;
+    border-bottom: 1px solid white;
+   }
+
+main.users a {
+    color: #9ED6F6;
+}
+
+main.users input {
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #9ED6F6;
+    color: black;
+    text-transform: uppercase;
+    border: none;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+main.users input:hover {
+    background-color: #78a2ba;
+    color: white;
+}
+
+/* FORMS  */
+
+.radio {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+div.formcontainer {
+    background-color: #272a2e;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+    position: relative;
+    padding-bottom: 50px;
+    font-size: 18px;
+    border-radius: 20px;
+    padding: 30px;
+    align-items: center;
+}
+
+.formcontainer h2{
+    font-size: 30px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    color: white;
+    width: 100%;
+}
+
+.formcontainer p {
+    margin-bottom: 20px;
+    color: white;
+}
+
+.select {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 20px;
+}
+
+.select select {
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.password {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.password div {
+    width: 45%;
+}
+
+.submit {
+    padding: 10px;
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.input {
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    color: white;
+}
+
+.input input {
+    width: 100%;
+    margin-bottom: 30px;
+    padding: 10px 0;
+    border-radius: 10px;
+    border: none;
+    border-bottom: 1px solid white;
+}
+
+.input .submit {
+    width: auto;
+    padding: 10px;
+    float: right;
+}
+
+.apply-form {
+    width: 100%;
+}
+
+.who textarea {
+    width: 100%;
+}
+
+.signup {
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+}
+
+.signup a {
+    color: white;
+}
+
+.who {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+}
+
+.who div {
+    width: 40%;
+}
+
+.gender {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.sex {
+    display: flex;
+    justify-content: strat;
+    width: 25%;
+}
+
+.sex input{
+    display: flex;
+    justify-content: start;
+    width: 25%;
+}
+
+.email {
+    width: 100%;
+}
+
+.email input{
+    width: 50%;
+}
+
+textarea {
+    width: 100%;
+    height: 80px;
+    border-radius: 15px;
+    padding: 15px;
+}
+
+.searchbar {
+    width: 960px;
+    padding: 5px 0;
+    display: flex;
+    justify-content: center;
+    padding: 0 30px;
+}
+
+.searchbar i {
+    font-size: 24px;
+    padding: 5px;
+    color: white;
+    margin-right: 10px;
+}
+
+.searchbar input {
+    width: 960px;
+    padding: 5px 0;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid white;
+    color: white;
+    font-size: 24px;
+}
+
+.searchbar input::placeholder {
+    color: white;
+    font-size: 24px;
+}
+
+.article_ad {
+    background-color: transparent;
+    width: 100%;
+    box-shadow: none;
+    color: black;
+}
+
+.article_ad p {
+    margin-bottom: 60px;
+}
+
+.article_ad a {
+    background-color: white;
+    padding: 10px 15px;
+    border-radius: 10px;
+    color: black;
+    text-decoration: none;
+    float: right;
+}
+
+.content {
+    padding-bottom: 25px;
+}
+
+.content h3 {
+    text-transform: uppercase;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-weight: 700;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 16px;
+}
+
+#short_desc{
+    font-size: 80%;
+}
+
+.onclick {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 36px;
+    color: white;
+    background-color: transparent;
+    height: auto;
+    border: none;
+    cursor: pointer;
+}
+
+.top {
+    position: fixed;
+    bottom: 50px;
+    right: 10px;
+    font-size: 50px;
+    color: #1a3d75;
+    transition: all .3s;
+}
+
+.top:hover {
+    font-size: 52px;
+
+}
+
+.top i {
+    color: #1a3d75;
+}
+
+/*ADMIN*/
+main.admin {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 70%;
+}
+
+main.admin div {
+    width: 100%;
+    margin: 50px 0;
+    border-radius: 20px;
+    background-color: #272a2e;
+    color: white;
+}
+
+.user_admin {
+    height: 250px;
+    overflow-y: scroll;
+}
+
+.user_admin h3 {
+    margin-bottom: 0;
+}
+
+/* ONE USER  */
+
+.user {
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #272a2e;
+    margin: 25px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.user textarea {
+    resize: none;
+}
+
+.user h1 {
+    color: white;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.user input {
+    background-color: #FFF;
+    color: black;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+}
+
+.user .modify {
+    transition: all .2s;
+}
+
+.user .modify:hover {
+    background-color: #272a2e;
+    cursor: pointer;
+}
+
+.user i {
+    color: white;
+    font-size: 20px;
+    transition: all .2s;
+}
+
+.user i:hover {
+    color: rgb(202, 0, 0);
+    font-size: 22px;
+}
+
+.short {
+    width: 100%;
+    margin: 15px 0;
+}
+
+.long {
+    width: 100%;
+    margin-bottom: 50px;
+    height: 250px;
+}
+
+.user select {
+    background-color: #FFF;
+    color: black;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+}
+
+.advertisement {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    color: white;
+}
+
+.advertisement h2 {
+    width: 100%;
+    color: #9ED6F6;
+}
+
+.advertisement p {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.advertisement a {
+    text-decoration: none;
+}
+
+.price {
+    font-weight: 700;
+}
+
+.ads {
+    color: white;
+    display: flex;
+    justify-content:center;
+    flex-wrap: wrap;
+}
+
+.ads h2 {
+    width: 100%;
+}
+
+.ads a {
+    color: #9ED6F6;
+}
+
+.ads table {
+    width: 60%;
+}
+
+.list {
+    max-width: 100%;
+}
+
+main.admin h3 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+main.admin p {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+div.footer {
+    position: fixed;
+    bottom: 10px;
+    width: 90%;
+    left: 50%;
+    background-color: #272a2e;
+    transform: translateX(-50%);
+    border-radius: 10px;
+    padding: 15px;
+}
+
+footer {
+    width: auto;
+    text-align: center;
+    color: #fff;
+}
+
+footer a {
+    color: white;
+}
+
+@media only screen and (max-width: 1350px) {
+
+    main {
+        width: 90%;
+    }
+
+    main.login {
+        width: 80%;
+    }
+
+    main article {
+        width: 45%;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .logo2 {
+        display: block;
+    }
+    .logo1 {
+        display: none;
+    }
+
+    .searchbar i {
+        display: none;
+    }
+
+    .sidebar {
+        width: 100%;
+        background-color: #272a2ebd;
+    }
+
+    .searchbar {
+        width: 80%;
+    }
+
+    main article {
+        width: 100%;
+    }
+
+    main.users table tr {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .user form {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .user input {
+        min-width: 100%;
+        margin: 25px 0;
+    }
+
+}
